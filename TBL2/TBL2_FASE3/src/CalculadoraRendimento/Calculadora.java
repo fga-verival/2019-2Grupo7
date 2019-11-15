@@ -10,7 +10,6 @@ public class Calculadora {
 	}
 
 	public double getRendimentoBruto() {
-		return 13.97f;
+		return this.tempo * this.aplicacaoInicial * this.taxa;
 	}
-	
 }
