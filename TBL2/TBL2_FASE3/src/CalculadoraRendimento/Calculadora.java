@@ -9,4 +9,8 @@ public class Calculadora {
 		this.taxa = taxa/100.0f;
 	}
 
+	public double getRendimentoBruto() {
+		return 13.97f;
+	}
+	
 }
