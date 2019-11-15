@@ -12,4 +12,12 @@ public class CalculadoraTest {
 		
 		assertEquals(calcRendimento.getRendimentoBruto(), rendimentoEsperado, 0.01);
 	}
+	
+	@Test
+	public void getRendimentoBrutoTest2() {
+		Calculadora calcRendimento = new Calculadora(120, 500.00f, 8.0f);
+		double rendimentoEsperado = 13.15;
+		
+		assertEquals(calcRendimento.getRendimentoBruto(), rendimentoEsperado, 0.01);
+	}
 }
