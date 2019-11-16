@@ -52,4 +52,11 @@ public class CalculadoraTest {
 	    
 	    assertEquals(calcImposto.getImpostoRenda(), impostoEsperado, 0.01);
 	}
+	@Test
+	public void getRendimentoLiquidoTest() {
+	    Calculadora calcRendimento = new Calculadora(60, 1000.00f, 8.5f);
+	    double rendimentoEsperado = 1.0829;
+	    
+	    assertEquals(calcRendimento.getRendimentoLiquido(), rendimentoEsperado, 0.01);
+	}
 }
