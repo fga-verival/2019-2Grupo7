@@ -47,16 +47,8 @@ public class CalculadoraTest {
 	}
 	@Test
 	public void getImpostoRendaTest() {
-	    Calculadora calcImposto = new Calculadora(60, 1000.00f, 8.5f);
-	    double impostoEsperado = 3.14;
-	    
-	    assertEquals(calcImposto.getImpostoRenda(), impostoEsperado, 0.01);
-	}
-	
-	@Test
-	public void getImpostoRendaTest2() {
-	    Calculadora calcImposto = new Calculadora(120, 500.00f, 8.0f);
-	    double impostoEsperado = 2.96;
+	    Calculadora calcImposto = new Calculadora(tempo, aplicacaoInicial, taxa);
+	    double impostoEsperado = valoresEsperados.impostoRenda;
 	    
 	    assertEquals(calcImposto.getImpostoRenda(), impostoEsperado, 0.01);
 	}
