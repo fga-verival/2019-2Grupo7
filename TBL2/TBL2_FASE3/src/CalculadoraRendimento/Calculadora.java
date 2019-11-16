@@ -14,6 +14,20 @@ public class Calculadora {
 	}
 	
 	public double getImpostoRenda() {
-	    return 3.14f;
+		double rendimento = this.getRendimentoBruto();
+		double aliquota = 0;
+		if(this.tempo <= 180/365.0f) {
+			aliquota = 0.225;
+		}
+		else if(this.tempo <= 360/365.0f) {
+			aliquota = 0.200;
+		}
+		else if(this.tempo <= 720/365.0f) {
+			aliquota = 0.175;
+		}
+		else {
+			aliquota = 0.150;
+		}
+	    return rendimento * aliquota;
 	}
 }
