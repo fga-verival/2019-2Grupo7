@@ -32,6 +32,9 @@ public class Calculadora {
 	}
 	
 	public double getRendimentoLiquido() {
-		return 1.0829f;
+		double valorAcumulado = this.aplicacaoInicial;
+		valorAcumulado += this.getRendimentoBruto();
+		valorAcumulado -= this.getImpostoRenda();
+		return (valorAcumulado/this.aplicacaoInicial)*100.0f - 100.0f;
 	}
 }
