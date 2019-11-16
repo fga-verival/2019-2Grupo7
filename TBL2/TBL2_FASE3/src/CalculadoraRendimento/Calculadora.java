@@ -12,4 +12,8 @@ public class Calculadora {
 	public double getRendimentoBruto() {
 		return this.tempo * this.aplicacaoInicial * this.taxa;
 	}
+	
+	public double getImpostoRenda() {
+	    return 3.14f;
+	}
 }
